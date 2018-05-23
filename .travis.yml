@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '8'
 script:
-- npm run beauty-server
+- npm run beauty
 - chmod 600 $HOME/frontend.pem
 - ssh-keyscan -H blendocu.com >> ~/.ssh/known_hosts
 - scp -i $HOME/frontend.pem -r public bfront@blendocu.com:/home/bfront/blendocu/public
